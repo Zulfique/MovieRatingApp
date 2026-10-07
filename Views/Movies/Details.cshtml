@@ -1,0 +1,19 @@
+@model MovieRatingApp.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h1>Movie Details</h1>
+
+<dl class="row">
+    <dt class="col-sm-3">Title</dt>
+    <dd class="col-sm-9">@Model.Title</dd>
+    <dt class="col-sm-3">Release Year</dt>
+    <dd class="col-sm-9">@Model.ReleaseYear</dd>
+    <dt class="col-sm-3">Rating</dt>
+    <dd class="col-sm-9">@Model.Rating</dd>
+</dl>
+
+<a asp-action="Edit" asp-route-id="@Model.MovieId" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

@@ -1,0 +1,1 @@
+// MovieRatingApp client-side scripts.
